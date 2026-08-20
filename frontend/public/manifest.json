@@ -1,0 +1,22 @@
+{
+  "name": "KaamSetu - Worker Safety Net",
+  "short_name": "KaamSetu",
+  "description": "AI Safety Net for BRICS Informal Workers",
+  "theme_color": "#1a3a6b",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/worker",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["social", "government", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}
