@@ -1,0 +1,446 @@
+{
+  "schemes": [
+    {
+      "id": "eshram",
+      "name": "e-Shram",
+      "country": "IN",
+      "description": "National database for unorganized workers. Provides accidental insurance and access to welfare schemes.",
+      "benefit": "Accidental insurance cover of ₹2 lakh. Gateway to other schemes.",
+      "benefit_value": 200000,
+      "currency": "INR",
+      "eligibility": {
+        "type": "informal_worker",
+        "skills": ["all"],
+        "min_age": 16,
+        "max_age": 59,
+        "max_income": null,
+        "conditions": ["Must be an unorganized/informal worker", "Must have Aadhaar card"]
+      },
+      "enrollment_url": "https://eshram.gov.in",
+      "enrollment_steps": [
+        "Visit eshram.gov.in or your nearest CSC center",
+        "Keep Aadhaar card and bank passbook ready",
+        "Fill in personal details and work type",
+        "Receive e-Shram card with UAN number"
+      ],
+      "category": "registration",
+      "ministry": "Ministry of Labour and Employment"
+    },
+    {
+      "id": "pmjay",
+      "name": "PMJAY (Ayushman Bharat)",
+      "country": "IN",
+      "description": "World's largest health insurance scheme providing ₹5 lakh per year per family for secondary and tertiary hospitalization.",
+      "benefit": "Free health insurance cover of ₹5 lakh per year for your family.",
+      "benefit_value": 500000,
+      "currency": "INR",
+      "eligibility": {
+        "type": "income_based",
+        "skills": ["all"],
+        "min_age": 0,
+        "max_age": 999,
+        "max_income": 15000,
+        "conditions": ["Family income below poverty line", "Listed in SECC 2011 data or eligible categories"]
+      },
+      "enrollment_url": "https://pmjay.gov.in",
+      "enrollment_steps": [
+        "Visit any empaneled hospital or Ayushman Mitra",
+        "Carry Aadhaar card and ration card",
+        "Check eligibility on mera.pmjay.gov.in",
+        "If eligible, get your Ayushman card printed free"
+      ],
+      "category": "health",
+      "ministry": "Ministry of Health and Family Welfare"
+    },
+    {
+      "id": "pm_sym",
+      "name": "PM-SYM (Shram Yogi Maan-dhan)",
+      "country": "IN",
+      "description": "Pension scheme for informal workers. Guarantees ₹3,000/month pension after age 60.",
+      "benefit": "Monthly pension of ₹3,000 after age 60.",
+      "benefit_value": 36000,
+      "currency": "INR",
+      "eligibility": {
+        "type": "age_income",
+        "skills": ["all"],
+        "min_age": 18,
+        "max_age": 40,
+        "max_income": 15000,
+        "conditions": ["Unorganized sector worker", "Monthly income below ₹15,000", "Not member of EPFO/ESIC/NPS"]
+      },
+      "enrollment_url": "https://maandhan.in",
+      "enrollment_steps": [
+        "Visit nearest CSC center with Aadhaar and bank details",
+        "Monthly contribution: ₹55 (age 18) to ₹200 (age 40)",
+        "Government matches your contribution equally",
+        "Receive pension from age 60"
+      ],
+      "category": "pension",
+      "ministry": "Ministry of Labour and Employment"
+    },
+    {
+      "id": "bocw",
+      "name": "BOCW (Building & Other Construction Workers)",
+      "country": "IN",
+      "description": "Welfare fund for construction workers providing education, pension, medical, and housing support.",
+      "benefit": "Education support ₹25,000-₹1 lakh for children, medical aid ₹1 lakh, pension ₹3,000/month.",
+      "benefit_value": 100000,
+      "currency": "INR",
+      "eligibility": {
+        "type": "skill_based",
+        "skills": ["mason", "construction", "carpenter", "plumber", "electrician", "painter", "welder", "labourer"],
+        "min_age": 18,
+        "max_age": 60,
+        "max_income": null,
+        "conditions": ["Must have worked 90+ days in construction in past year", "Must register with State BOCW Board"]
+      },
+      "enrollment_url": "https://labour.gov.in/bocw",
+      "enrollment_steps": [
+        "Visit State Labour Department or BOCW Board office",
+        "Carry Aadhaar, work certificate from contractor, passport photo",
+        "Pay registration fee (₹25-50 depending on state)",
+        "Receive BOCW registration card valid for 3 years"
+      ],
+      "category": "welfare",
+      "ministry": "Ministry of Labour and Employment"
+    },
+    {
+      "id": "pm_svanidhi",
+      "name": "PM-SVANidhi (Street Vendor Loans)",
+      "country": "IN",
+      "description": "Micro-credit facility for street vendors. Working capital loan up to ₹50,000.",
+      "benefit": "Working capital loan: ₹10,000 (1st), ₹20,000 (2nd), ₹50,000 (3rd). 7% interest subsidy.",
+      "benefit_value": 50000,
+      "currency": "INR",
+      "eligibility": {
+        "type": "skill_based",
+        "skills": ["street vendor", "hawker", "vendor", "food vendor", "fruit seller"],
+        "min_age": 18,
+        "max_age": 65,
+        "max_income": null,
+        "conditions": ["Must be a street vendor", "Must have vending certificate or Letter of Recommendation from ULB"]
+      },
+      "enrollment_url": "https://pmsvanidhi.mohua.gov.in",
+      "enrollment_steps": [
+        "Visit pmsvanidhi.mohua.gov.in or nearest bank",
+        "Carry Aadhaar, vendor ID/certificate, bank details",
+        "Apply for ₹10,000 first tranche loan",
+        "Repay timely to qualify for ₹20,000 second tranche"
+      ],
+      "category": "credit",
+      "ministry": "Ministry of Housing and Urban Affairs"
+    },
+    {
+      "id": "mgnrega",
+      "name": "MGNREGA",
+      "country": "IN",
+      "description": "Guarantees 100 days of wage employment per year to rural households.",
+      "benefit": "100 days guaranteed work at ₹267-374/day (varies by state). Total ₹26,700-37,400/year.",
+      "benefit_value": 30000,
+      "currency": "INR",
+      "eligibility": {
+        "type": "location_based",
+        "skills": ["all"],
+        "min_age": 18,
+        "max_age": 999,
+        "max_income": null,
+        "conditions": ["Must be a rural household member", "Must have job card or apply for one"]
+      },
+      "enrollment_url": "https://nrega.nic.in",
+      "enrollment_steps": [
+        "Visit Gram Panchayat office with passport photo and ID",
+        "Apply for MGNREGA Job Card (free)",
+        "Once issued, demand work in writing at Gram Panchayat",
+        "Work must be provided within 15 days of demand"
+      ],
+      "category": "employment",
+      "ministry": "Ministry of Rural Development"
+    },
+    {
+      "id": "esic",
+      "name": "ESIC (Employees State Insurance)",
+      "country": "IN",
+      "description": "Medical insurance and cash benefits for workers in organized sector establishments.",
+      "benefit": "Full medical care for worker and family. Sickness benefit at 70% of wages. Maternity benefit.",
+      "benefit_value": 100000,
+      "currency": "INR",
+      "eligibility": {
+        "type": "income_based",
+        "skills": ["all"],
+        "min_age": 18,
+        "max_age": 65,
+        "max_income": 21000,
+        "conditions": ["Working in a factory/establishment with 10+ workers", "Monthly wages up to ₹21,000"]
+      },
+      "enrollment_url": "https://esic.gov.in",
+      "enrollment_steps": [
+        "Your employer must register the establishment",
+        "Employer deducts 0.75% of wages as your contribution",
+        "Get your ESIC card / Pehchan card from dispensary",
+        "Visit any ESIC hospital or dispensary for free treatment"
+      ],
+      "category": "health",
+      "ministry": "Ministry of Labour and Employment"
+    },
+    {
+      "id": "inss_informal",
+      "name": "INSS (Instituto Nacional do Seguro Social)",
+      "country": "BR",
+      "description": "Brazilian social security for informal workers. Provides retirement pension, sickness benefits, and maternity pay.",
+      "benefit": "Retirement pension, sickness allowance, maternity salary. Minimum R$1,412/month pension.",
+      "benefit_value": 16944,
+      "currency": "BRL",
+      "eligibility": {
+        "type": "informal_worker",
+        "skills": ["all"],
+        "min_age": 16,
+        "max_age": 70,
+        "max_income": null,
+        "conditions": ["Must register as Individual Contributor (Contribuinte Individual)", "Monthly contribution: 11% of minimum wage (MEI) or 20% of income"]
+      },
+      "enrollment_url": "https://www.gov.br/inss",
+      "enrollment_steps": [
+        "Access meu.inss.gov.br or call 135",
+        "Register with CPF number",
+        "Choose contribution plan: MEI (5%), simplified (11%), or full (20%)",
+        "Generate monthly payment slip (GPS) and pay at any bank"
+      ],
+      "category": "pension",
+      "ministry": "Ministério da Previdência Social"
+    },
+    {
+      "id": "bolsa_familia",
+      "name": "Bolsa Família",
+      "country": "BR",
+      "description": "Family income transfer program for families in poverty and extreme poverty.",
+      "benefit": "R$600/month per family + R$150 per child (0-6 years). Total varies by family size.",
+      "benefit_value": 7200,
+      "currency": "BRL",
+      "eligibility": {
+        "type": "income_based",
+        "skills": ["all"],
+        "min_age": 0,
+        "max_age": 999,
+        "max_income": 1200,
+        "conditions": ["Family per-capita income up to R$218/month", "Registered in CadÚnico (Single Registry)"]
+      },
+      "enrollment_url": "https://www.gov.br/mds",
+      "enrollment_steps": [
+        "Visit your nearest CRAS (Social Assistance Center)",
+        "Register in CadÚnico with CPF, ID, proof of address",
+        "Family income assessment will be conducted",
+        "If approved, receive Bolsa Família card from Caixa Econômica"
+      ],
+      "category": "income_support",
+      "ministry": "Ministério do Desenvolvimento Social"
+    },
+    {
+      "id": "seguro_desemprego",
+      "name": "Seguro Desemprego",
+      "country": "BR",
+      "description": "Unemployment insurance for formally employed workers who were dismissed without cause.",
+      "benefit": "3-5 monthly payments based on last salary. Range: R$1,412 to R$2,313 per month.",
+      "benefit_value": 9000,
+      "currency": "BRL",
+      "eligibility": {
+        "type": "employment_based",
+        "skills": ["all"],
+        "min_age": 18,
+        "max_age": 999,
+        "max_income": null,
+        "conditions": ["Dismissed without just cause", "Worked minimum 12 months in last 18 (1st request)", "Not receiving other INSS benefit"]
+      },
+      "enrollment_url": "https://www.gov.br/trabalho-e-emprego",
+      "enrollment_steps": [
+        "Apply within 7-120 days of dismissal",
+        "Access gov.br portal or visit SINE office",
+        "Carry CTPS (work card), dismissal term, CPF, ID",
+        "Payments deposited to Caixa Econômica account"
+      ],
+      "category": "unemployment",
+      "ministry": "Ministério do Trabalho e Emprego"
+    },
+    {
+      "id": "uif",
+      "name": "UIF (Unemployment Insurance Fund)",
+      "country": "ZA",
+      "description": "South African unemployment insurance providing benefits for unemployment, illness, maternity, and adoption.",
+      "benefit": "Up to 238 days of unemployment benefits. 38-58% of daily earnings.",
+      "benefit_value": 50000,
+      "currency": "ZAR",
+      "eligibility": {
+        "type": "employment_based",
+        "skills": ["all"],
+        "min_age": 18,
+        "max_age": 65,
+        "max_income": null,
+        "conditions": ["Must have been employed and contributing to UIF", "Employer must have registered with UIF", "Must have worked 24+ months in last 4 years"]
+      },
+      "enrollment_url": "https://www.labour.gov.za/uif",
+      "enrollment_steps": [
+        "Your employer deducts 1% of salary and contributes another 1%",
+        "When unemployed, visit nearest Labour Centre",
+        "Bring ID, UIF registration, last payslip, bank details",
+        "Complete UI-2.1 and UI-2.8 application forms"
+      ],
+      "category": "unemployment",
+      "ministry": "Department of Employment and Labour"
+    },
+    {
+      "id": "sassa_srd",
+      "name": "SASSA SRD Grant (R370)",
+      "country": "ZA",
+      "description": "Social Relief of Distress grant for unemployed South Africans aged 18-60.",
+      "benefit": "R370 per month direct payment.",
+      "benefit_value": 4440,
+      "currency": "ZAR",
+      "eligibility": {
+        "type": "income_based",
+        "skills": ["all"],
+        "min_age": 18,
+        "max_age": 60,
+        "max_income": 1800,
+        "conditions": ["South African citizen/permanent resident/refugee", "Unemployed with no income", "Not receiving other social grant or UIF"]
+      },
+      "enrollment_url": "https://srd.sassa.gov.za",
+      "enrollment_steps": [
+        "Apply online at srd.sassa.gov.za",
+        "Enter SA ID number and cellphone number",
+        "Verify via OTP and submit banking details",
+        "Status checked monthly; re-application may be required"
+      ],
+      "category": "income_support",
+      "ministry": "Department of Social Development"
+    },
+    {
+      "id": "coida",
+      "name": "COIDA (Compensation for Occupational Injuries)",
+      "country": "ZA",
+      "description": "Compensation for workers injured or diseased during employment.",
+      "benefit": "Medical treatment costs, temporary disability payments (75% of earnings), permanent disability lump sum.",
+      "benefit_value": 100000,
+      "currency": "ZAR",
+      "eligibility": {
+        "type": "employment_based",
+        "skills": ["all"],
+        "min_age": 18,
+        "max_age": 65,
+        "max_income": null,
+        "conditions": ["Must have been injured during employment", "Employer must be registered with Compensation Fund", "Claim within 12 months of accident"]
+      },
+      "enrollment_url": "https://www.labour.gov.za/compensation-fund",
+      "enrollment_steps": [
+        "Report injury to employer immediately",
+        "Employer must submit WCL.2 form to Compensation Commissioner",
+        "Visit any public hospital — treatment is free under COIDA",
+        "Follow up on claim at nearest Labour Centre"
+      ],
+      "category": "injury",
+      "ministry": "Department of Employment and Labour"
+    },
+    {
+      "id": "fss_russia",
+      "name": "Social Insurance Fund (FSS)",
+      "country": "RU",
+      "description": "Russian social insurance providing sickness benefits, maternity pay, and workplace injury compensation.",
+      "benefit": "Sick leave at 60-100% of salary. Maternity benefit for 140 days. Workplace injury compensation.",
+      "benefit_value": 200000,
+      "currency": "RUB",
+      "eligibility": {
+        "type": "employment_based",
+        "skills": ["all"],
+        "min_age": 18,
+        "max_age": 65,
+        "max_income": null,
+        "conditions": ["Officially employed or self-employed with voluntary contributions", "Employer makes social insurance contributions"]
+      },
+      "enrollment_url": "https://fss.gov.ru",
+      "enrollment_steps": [
+        "Enrolled automatically if officially employed",
+        "Self-employed can register voluntarily at local FSS branch",
+        "For sickness: obtain sick leave certificate from doctor",
+        "Submit documents to employer or directly to FSS"
+      ],
+      "category": "social_insurance",
+      "ministry": "Ministry of Labour and Social Protection"
+    },
+    {
+      "id": "employment_support_ru",
+      "name": "Federal Employment Support",
+      "country": "RU",
+      "description": "Russian federal employment assistance including job search help, retraining, and unemployment benefits.",
+      "benefit": "Unemployment benefit: ₽4,000-12,792/month. Free retraining programs. Job placement assistance.",
+      "benefit_value": 150000,
+      "currency": "RUB",
+      "eligibility": {
+        "type": "employment_based",
+        "skills": ["all"],
+        "min_age": 16,
+        "max_age": 65,
+        "max_income": null,
+        "conditions": ["Must register at Employment Centre (Центр занятости)", "Must be actively seeking work"]
+      },
+      "enrollment_url": "https://trudvsem.ru",
+      "enrollment_steps": [
+        "Visit nearest Employment Centre with passport and work book",
+        "Register as job seeker",
+        "After 11 days, receive official unemployed status",
+        "Start receiving unemployment benefits and access retraining"
+      ],
+      "category": "employment",
+      "ministry": "Министерство труда и социальной защиты"
+    },
+    {
+      "id": "dibao",
+      "name": "Dibao (最低生活保障)",
+      "country": "CN",
+      "description": "China's Minimum Livelihood Guarantee providing monthly cash assistance to families below the poverty line.",
+      "benefit": "Monthly supplement to bring income up to local minimum standard. ¥500-1,200/month depending on city.",
+      "benefit_value": 10000,
+      "currency": "CNY",
+      "eligibility": {
+        "type": "income_based",
+        "skills": ["all"],
+        "min_age": 0,
+        "max_age": 999,
+        "max_income": 2000,
+        "conditions": ["Per-capita income below local Dibao standard", "Must hold local hukou (household registration)", "No assets exceeding local limits"]
+      },
+      "enrollment_url": "https://www.mca.gov.cn",
+      "enrollment_steps": [
+        "Apply at community/village committee (社区/村委会)",
+        "Provide ID, hukou, income proof, bank details",
+        "Community conducts household survey and public review",
+        "If approved, receive monthly Dibao payment to bank account"
+      ],
+      "category": "income_support",
+      "ministry": "Ministry of Civil Affairs (民政部)"
+    },
+    {
+      "id": "nrsi",
+      "name": "NRSI (New Rural Social Insurance / 新农保)",
+      "country": "CN",
+      "description": "Social pension insurance for rural residents in China.",
+      "benefit": "Basic pension: ¥103+/month (government subsidy) + personal account accumulation. Total varies by contribution level.",
+      "benefit_value": 3000,
+      "currency": "CNY",
+      "eligibility": {
+        "type": "location_based",
+        "skills": ["all"],
+        "min_age": 16,
+        "max_age": 60,
+        "max_income": null,
+        "conditions": ["Rural hukou holder aged 16-60", "Not enrolled in urban employee pension", "Contribute annually for 15+ years to receive pension at 60"]
+      },
+      "enrollment_url": "https://www.mohrss.gov.cn",
+      "enrollment_steps": [
+        "Apply at village/township social insurance office",
+        "Choose annual contribution level (¥100-2,000/year)",
+        "Government provides subsidy of ¥30-60 per year",
+        "Receive basic pension + personal account pension at age 60"
+      ],
+      "category": "pension",
+      "ministry": "Ministry of Human Resources and Social Security (人力资源和社会保障部)"
+    }
+  ]
+}
